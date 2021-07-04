@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mini vue</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>模版表达式</h1>
+      <h3>{{ msg }}</h3>
+      <h3>{{ count }}</h3>
+      <hr />
+      <h1>v-text</h1>
+      <div v-text="msg"></div>
+      <hr />
+      <h1>v-html</h1>
+      <div v-html="testHtml"></div>
+      <hr />
+      <h1>v-model</h1>
+      <input type="text" v-model="msg" />
+      <input type="text" v-model="count" />
+      <hr />
+      <button v-on:click="handler">按钮</button>
+    </div>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
